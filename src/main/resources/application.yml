@@ -1,0 +1,28 @@
+server:
+  host: analisetransacao-admin.org
+  port: 8081
+
+api:
+  info:
+    title: Analise de transacao
+    description: API para analise de transacao
+    version: 1.0
+    contact:
+      name: Kevin Cavenatti Bueno
+      url: http://github.com/apidoacao
+      email: kevin_cavenatti@hotmail.com
+
+spring:
+  application:
+    name: apianalisetransacao
+  kafka:
+    topics:
+      topic-analise-transacao: analise-transacao
+      topic-aprovacao-transacao: aprovacao-transacao
+    bootstrap-servers: localhost:9092
+    group-id: apiAnaliseTransacao
+
+security:
+  jwt:
+    expiracao: 60
+    chave-assinatura: OTMwZTM0M2QtOTNkZC00OWVhLWFmNTMtOWVlMmJiOWFkZjA0
