@@ -17,9 +17,6 @@ public class TransacaoRepository {
     @Autowired
     private RedisTemplate redisTemplate;
 
-    @Autowired
-    private RedisKeyValueTemplate redisKeyValueTemplate;
-
     private static final String KEY = "TRANSACAO";
 
     public List<TransacaoDto> findAll() {
